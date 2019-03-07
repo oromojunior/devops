@@ -34,6 +34,7 @@ sh "docker push maoromo/exams:latest"
 
 stage('docker run the image'){
 sh "docker run -d -p 4546:80/tcp devops-exams:latest"
+}
 stage('Apply changes to the environment') {
 sh "ls -l"
 
